@@ -15,3 +15,6 @@ implementation ("com.fpliu:Android-Font-Assets-Alibaba_PuHuiTi_Heavy:1.0.0")
 
 implementation ("com.fpliu:Android-Font-Assets-Alibaba_PuHuiTi_Bold:1.0.0")
 ```
+
+### 提示
+想要查看各种字体（字形）的效果，请移步至[Android-Font-Config](https://github.com/leleliu008/Android-Font-Config)
