@@ -1,4 +1,8 @@
-include(":library")
+include(":Alibaba_PuHuiTi_Light")
+include(":Alibaba_PuHuiTi_Regular")
+include(":Alibaba_PuHuiTi_Medium")
+include(":Alibaba_PuHuiTi_Heavy")
+include(":Alibaba_PuHuiTi_Bold")
 
 pluginManagement {
     repositories {

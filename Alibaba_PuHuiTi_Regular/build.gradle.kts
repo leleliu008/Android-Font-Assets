@@ -3,7 +3,7 @@ plugins {
     
     //https://github.com/leleliu008/BintrayUploadGradlePlugin
     //https://plugins.gradle.org/plugin/com.fpliu.bintray
-    id("com.fpliu.bintray").version("1.0.7")
+    id("com.fpliu.bintray").version("1.0.8")
 
     //用于构建aar和maven包
     //https://github.com/dcendents/android-maven-gradle-plugin
@@ -52,12 +52,16 @@ group = "com.fpliu"
 //这个是版本号，必须填写
 version = android.defaultConfig.versionName ?: "1.0.0"
 
+val rootProjectName = rootProject.name
+
 bintrayUploadExtension {
+    archivesBaseName = "${rootProjectName}-${project.name}"
+
     developerName = "leleliu008"
     developerEmail = "leleliu008@gamil.com"
 
-    projectSiteUrl = "https://github.com/$developerName/Android-Font-Assets"
-    projectGitUrl = "https://github.com/$developerName/Android-Font-Assets"
+    projectSiteUrl = "https://github.com/$developerName/$rootProjectName"
+    projectGitUrl = "https://github.com/$developerName/$rootProjectName"
 
     bintrayOrganizationName = "fpliu"
     bintrayRepositoryName = "newton"
